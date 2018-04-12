@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="style.css"  rel="stylesheet" >
+  <style>
+   
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-4 sidenav">	
+		<div class="textbox">
+		 <hr><br>
+          <p style="font-family: Verdana;clear: left; padding: 0;position: absolute;right: 150px;top:45px;left: 40px">GREAT! LET'S MAKE SURE WE HAVE THE RIGHT OPPORTUNITIES FOR YOU.</p> 
+		</div >
+		<div class="box">
+		<h3>Profile Builder</h3>
+		<h4>Step 2 - Tell us a bit more!</h4>
+		<p>Refining your profile will helps us to match you up with employers who can offer opportumities that best align with your professional expectations</p><br>
+		<h4>INTERESTED IN</h4><hr style="margin-top: 5px;">
+		<p><b>What your Salary Expectations?</b><i class="fa fa-asterisk" aria-hidden="true" style="font-size:12px;color:red;"></i></p>
+		<p>Please choose a base salary based on your primary loacation.</p>
+		<button style="font-size:14px"><i class="fa fa-usd"></i></button><input type="text" name="currency" placeholder="15000"><br>
+		
+		<p style="margin-top: 20px; text-align: justify;">We recommend indicating base salary only. Other income factors, such as equity or bonus , can be discussed directly with employers once you receive your first interview request.This number is not binding.</p><br>
+		</div>
+			<div class="box1">
+		<p><b>What hourly rate are you looking for in a contact role?</b><i class="fa fa-asterisk" aria-hidden="true" style="font-size:12px;color:red;"></i></p>
+		<p>We recommend indicating base salary only. Other income factors, such as equity or bonus , can be discussed directly with employers once you receive your first interview request.This number is not binding.</p><br>
+		</div>
+    </div>
+
+    <div class="col-sm-7">
+   <div class="vl"></div>
+	<div class="heading">
+		<h1 style="text-align: center;font-family:impact;color:cornflowerblue">Key Functionalities</h1>
+		<div class="heading2"><h3>
+      <span class="fa-stack">
+ <i class="fa fa-check" aria-hidden="true"></i>
+</span>Salary Expectations</h3>
+		<h3>
+      <span class="fa-stack">
+ <i class="fa fa-check" aria-hidden="true"></i>
+</span>Current Salary</h3>
+		<h3>
+      <span class="fa-stack">
+ <i class="fa fa-check" aria-hidden="true"></i>
+</span>Contract rate if applicable  &emsp;&emsp;from prev</h3></div>
+		</div>
+     <div class="box3">
+		 <h4><b>Select roles yor are interested in</b></h4> 
+	<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" >Recruiting
+    <span class="caret"></span></button>
+    <ul  class="dropdown-menu">
+      <li><a href="#">Full cycle recruiter</a></li>x
+      <li><a href="#">People Ops management</a></li>
+      <li><a href="#">Sourcer</a></li>
+		  <li><a href="#">Technical Recruiter</a></li>
+    </ul>
+  </div>
+		 <form >
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Full-cycle recruiter
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">People Ops management
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Sourcer
+    </label><br>
+			  <label class="checkbox-inline">
+      <input type="checkbox" value="">Technical Recruiter
+    </label>
+  </form>
+		 <ul  class="list-inline">
+  <li>Full-cycle recruiter<span class="close">x</span></li>
+
+  <li>Ops management<span class="close">x</span></li>
+  <li>Technical Recruiter<span class="close">x</span></li>
+</ul>
+		  <h4 style="margin-top: 30px;"><b>Select how much experience you had in each</b></h4> 
+
+	<div class="""slidecontainer">
+		  <p>Full-cycle recruiter:<span id="demo"></span></p>
+ <input type="range" min="1" max="8" value="6" class="slider" id="myRange">
+		 <p>People Ops management:<span id="demo1"></span></p>
+  <input type="range" min="1" max="8" value="3" class="slider" id="myRange1">
+		 <p>Technical Recruiter:<span id="demo2"></span></p>
+  <input type="range" min="1" max="8" value="3" class="slider" id="myRange2">
+  
+</div>	 
+		</div> 
+  <script>
+var closebtns = document.getElementsByClassName("close");
+var i;
+
+for (i = 0; i < closebtns.length; i++) {
+  closebtns[i].addEventListener("click", function() {
+    this.parentElement.style.display = 'none';
+  });
+}
+</script>  
+ <script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>  
+		<script>
+var slider = document.getElementById("myRange1");
+var output = document.getElementById("demo1");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>   
+		<script>
+var slider = document.getElementById("myRange2");
+var output = document.getElementById("demo2");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>   
+
+
+</body>
+</html>
